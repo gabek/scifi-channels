@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C56826C2814C6FD2DE4953 /* Pods_scifitv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03FCABF2CB6434DBD765B7 /* Pods_scifitv.framework */; };
 		A0AF6D421BDCA5AB00992DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF6D411BDCA5AB00992DAB /* AppDelegate.swift */; };
-		A0AF6D441BDCA5AB00992DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF6D431BDCA5AB00992DAB /* ViewController.swift */; };
-		A0AF6D471BDCA5AB00992DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF6D451BDCA5AB00992DAB /* Main.storyboard */; };
 		A0AF6D491BDCA5AB00992DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF6D481BDCA5AB00992DAB /* Assets.xcassets */; };
+		A0B3D12A1C7C120A00AE1F7A /* ChannelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3D1291C7C120A00AE1F7A /* ChannelSelectionViewController.swift */; };
+		A0B3D12C1C7C168300AE1F7A /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3D12B1C7C168300AE1F7A /* ChannelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E45C13B583474831069333C /* Pods-scifitv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scifitv.release.xcconfig"; path = "Pods/Target Support Files/Pods-scifitv/Pods-scifitv.release.xcconfig"; sourceTree = "<group>"; };
+		6A03FCABF2CB6434DBD765B7 /* Pods_scifitv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scifitv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF6D3E1BDCA5AB00992DAB /* scifitv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scifitv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF6D411BDCA5AB00992DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0AF6D431BDCA5AB00992DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0AF6D461BDCA5AB00992DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0AF6D481BDCA5AB00992DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AF6D4A1BDCA5AB00992DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B3D1291C7C120A00AE1F7A /* ChannelSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelSelectionViewController.swift; sourceTree = "<group>"; };
+		A0B3D12B1C7C168300AE1F7A /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		BF5C702D494096EE3675AF19 /* Pods-scifitv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scifitv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scifitv/Pods-scifitv.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C56826C2814C6FD2DE4953 /* Pods_scifitv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95F6A05717EE9C79DFE4EF5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A03FCABF2CB6434DBD765B7 /* Pods_scifitv.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0AF6D351BDCA5AB00992DAB = {
 			isa = PBXGroup;
 			children = (
 				A0AF6D401BDCA5AB00992DAB /* scifitv */,
 				A0AF6D3F1BDCA5AB00992DAB /* Products */,
+				B06C265E86EA8622FCA7CECF /* Pods */,
+				95F6A05717EE9C79DFE4EF5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,12 +68,21 @@
 			isa = PBXGroup;
 			children = (
 				A0AF6D411BDCA5AB00992DAB /* AppDelegate.swift */,
-				A0AF6D431BDCA5AB00992DAB /* ViewController.swift */,
-				A0AF6D451BDCA5AB00992DAB /* Main.storyboard */,
 				A0AF6D481BDCA5AB00992DAB /* Assets.xcassets */,
 				A0AF6D4A1BDCA5AB00992DAB /* Info.plist */,
+				A0B3D1291C7C120A00AE1F7A /* ChannelSelectionViewController.swift */,
+				A0B3D12B1C7C168300AE1F7A /* ChannelCell.swift */,
 			);
 			path = scifitv;
+			sourceTree = "<group>";
+		};
+		B06C265E86EA8622FCA7CECF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF5C702D494096EE3675AF19 /* Pods-scifitv.debug.xcconfig */,
+				2E45C13B583474831069333C /* Pods-scifitv.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0AF6D4D1BDCA5AB00992DAB /* Build configuration list for PBXNativeTarget "scifitv" */;
 			buildPhases = (
+				B6DA46BD55BD061004599A61 /* Check Pods Manifest.lock */,
 				A0AF6D3A1BDCA5AB00992DAB /* Sources */,
 				A0AF6D3B1BDCA5AB00992DAB /* Frameworks */,
 				A0AF6D3C1BDCA5AB00992DAB /* Resources */,
+				A14A816052382CE5CB1F3A21 /* Embed Pods Frameworks */,
+				668D9A4A76B0E9F9CAE9DF91 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,6 +120,7 @@
 				TargetAttributes = {
 					A0AF6D3D1BDCA5AB00992DAB = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UJXQMSLQ5S;
 					};
 				};
 			};
@@ -120,34 +148,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AF6D491BDCA5AB00992DAB /* Assets.xcassets in Resources */,
-				A0AF6D471BDCA5AB00992DAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		668D9A4A76B0E9F9CAE9DF91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scifitv/Pods-scifitv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A14A816052382CE5CB1F3A21 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scifitv/Pods-scifitv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DA46BD55BD061004599A61 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0AF6D3A1BDCA5AB00992DAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AF6D441BDCA5AB00992DAB /* ViewController.swift in Sources */,
+				A0B3D12C1C7C168300AE1F7A /* ChannelCell.swift in Sources */,
 				A0AF6D421BDCA5AB00992DAB /* AppDelegate.swift in Sources */,
+				A0B3D12A1C7C120A00AE1F7A /* ChannelSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A0AF6D451BDCA5AB00992DAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0AF6D461BDCA5AB00992DAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A0AF6D4B1BDCA5AB00992DAB /* Debug */ = {
@@ -233,25 +298,33 @@
 		};
 		A0AF6D4E1BDCA5AB00992DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C702D494096EE3675AF19 /* Pods-scifitv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = scifitv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabekangas.scifitv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		A0AF6D4F1BDCA5AB00992DAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E45C13B583474831069333C /* Pods-scifitv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = scifitv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabekangas.scifitv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -274,6 +347,7 @@
 				A0AF6D4F1BDCA5AB00992DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

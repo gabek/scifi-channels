@@ -12,10 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let navController = UINavigationController()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let rootVc = ChannelSelectionViewController()
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = UINavigationController(rootViewController: rootVc)
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
