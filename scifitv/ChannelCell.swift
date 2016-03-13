@@ -10,14 +10,18 @@ import Foundation
 import UIKit
 
 class ChannelCell: UICollectionViewCell {
-    let titleLabel = UILabel.newAutoLayoutView()
-    let imageView = UIImageView.newAutoLayoutView()
+    let imageView = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = UIColor.blueColor()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         contentView.addSubview(imageView)
-        imageView.autoPinEdgesToSuperviewEdges()
+        
+        imageView.topAnchor.constraintEqualToAnchor(contentView.topAnchor).active = true
+        imageView.bottomAnchor.constraintEqualToAnchor(contentView.bottomAnchor).active = true
+        imageView.leadingAnchor.constraintEqualToAnchor(contentView.leadingAnchor).active = true
+        imageView.trailingAnchor.constraintEqualToAnchor(contentView.trailingAnchor).active = true
         imageView.adjustsImageWhenAncestorFocused = true
     }
 

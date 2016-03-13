@@ -85,11 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-scifitv/AFNetworking.framework"
-  install_framework "Pods-scifitv/PureLayout.framework"
   install_framework "Pods-scifitv/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-scifitv/AFNetworking.framework"
-  install_framework "Pods-scifitv/PureLayout.framework"
   install_framework "Pods-scifitv/SDWebImage.framework"
 fi

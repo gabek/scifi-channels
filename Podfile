@@ -7,6 +7,5 @@ platform :tvos, '9.0'
 
 target 'scifitv' do
   pod 'AFNetworking', '~> 3.0'
-  pod 'PureLayout', :git => 'https://github.com/gabek/PureLayout.git'
   pod 'SDWebImage', :git => 'https://github.com/rs/SDWebImage.git'
 end
